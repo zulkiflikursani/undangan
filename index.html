@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Rusdianto & Nur Wahida</h1>
+        <p>Akan melangsungkan resepesi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+      </main>
+    </section>
+    <nav class="navbar navbar-expand-md sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Anchu</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Anchu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <!-- <a class="nav-link" href="#story">RSVP</a> -->
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Akad Nikah</h2>
+            <h3>Diselenggarakan pada 1 Septermber 2023</h3>
+            <h3>Jam 14.00 WITA</h3>
+            <h3>di Bontonompo, Kel. Canrego, Kec. Polsel, Kab. Takalar</h3>
+          </div>
+
+          <div class="col-md-8 text-center mt-5">
+            <h2>Acara Pesta</h2>
+            <h3>
+              Diselenggarakan pada 2 Septermber 2023 di Kampung Beru, Kelurahan
+              Panrannuangku, Kec. Polut, Kab. Takalar
+            </h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud mengundang
+              Bapak/Ibu, untuk hadir pada acara pernikahan kami.
+            </p>
+          </div>
+        </div>
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Rusdionto</h3>
+                <p>Deskripsi tentang Rusdianto</p>
+                <p>Putra dari a dan Ibu</p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/man.jpg"
+                  alt="Rusdianto"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/women.jpg"
+                  alt="Rusdianto"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8 text-start">
+                <h3>St. Nur Wahida</h3>
+                <p>Deskripsi tentang Rusdianto</p>
+                <p>Putra dari a dan Ibu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Resepsi</h2>
+            <p class="alamat">
+              Alamat: Kampung Beru, Kelurahan Panrannuangku, Kec. Polut, Kab.
+              Takalar
+            </p>
+            <a href="" target="_blank" class="btn btn-light btn-sm"
+              >Klik untuk membuka petah</a
+            >
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>14.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>1 September 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-body-secondary">
+                Saat akad nikah diharapkan untuk kondusif menjaga ketertiban
+                untuk memaksimalkan kegiatan resepsi
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Acara Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>10.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>2 September 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-body-secondary">
+                Saat acara resepsi diharapkan untuk kondusif menjaga ketertiban
+                untuk memaksimalkan kegiatan resepsi
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Baiaman Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              tempora accusantium saepe reiciendis aperiam unde?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/302/300)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Bertemu</h3>
+                    <span>1 jan 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Id, ipsum harum magni cum ullam possimus!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/300/301)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>1 jan 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facilis sed, aliquam deleniti quam rerum ratione iste nemo
+                      soluta.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/301/300)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Lamaran</h3>
+                    <span>1 jan 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facilis sed, aliquam deleniti quam rerum ratione iste nemo
+                      soluta.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="galery" class="galery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memory Kisah Kami</span>
+            <h2>Galry Foto</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              tempora accusantium saepe reiciendis aperiam unde?
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3 justify-content-center">
+            <a
+              href="https://picsum.photos/id/100/1200/768"
+              data-toggle="lightbox"
+              data-caption="Anchu 1"
+              data-gallery="example-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/100/300/400"
+                alt="Anchu 1"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/102/1200/768"
+              data-toggle="lightbox"
+              data-caption="Anchu 2"
+              data-gallery="example-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/102/300/400"
+                alt="Anchu 1"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/103/1200/768 "
+              data-toggle="lightbox"
+              data-caption="Anchu 3"
+              data-gallery="example-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/103/300/400"
+                alt="Anchu 3"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/106/1200/768"
+              data-toggle="lightbox"
+              data-caption="Anchu 4"
+              data-gallery="example-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/106/300/400"
+                alt="Anchu 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/104/1200/768"
+              data-toggle="lightbox"
+              data-caption="Anchu 5"
+              data-gallery="example-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/104/300/400"
+                alt="Anchu 5"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan Tanda Kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              tempora accusantium saepe reiciendis aperiam unde?
+            </p>
+          </div>
+
+          <div class="row justify-content-center text-center col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                12345678 - Rusdianto
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">BNI</div>
+                12345678 - Rusdianto
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">BRI</div>
+                12345678 - Rusdianto
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block"
+              >&copy; 2023 Anchu Wedding. All Right Reserved.
+            </small>
+            <small class="block"
+              >Design by
+              <a href="https://www.instagram.com/zhulkifli_/"
+                >@zhulkifli_</a
+              ></small
+            >
+            <ul>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 9, // required
+        day: 1, // required
+        hours: 0, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+
+    <script>
+      const hamberger = document.querySelector(".navbar-toggler");
+      const stickyTop = document.querySelector(".sticky-top");
+      hamberger.addEventListener("click", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      const offcanvas = document.querySelector(".offcanvas");
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+  </body>
+</html>
